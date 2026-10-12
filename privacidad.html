@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Ariel Play Dashboard</title>
+  <style>
+:root {
+  --text: #1e293b;
+  --muted: #64748b;
+  --brand: #2756c5;
+  --border: #e2e8f0;
+  --bg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+header { padding-top: 32px; display: flex; align-items: center; gap: 12px; }
+header .logo {
+  width: 36px; height: 36px; border-radius: 8px; background: var(--brand);
+  display: grid; place-items: center; color: #fff; font-weight: 700;
+}
+header a { color: var(--text); text-decoration: none; font-weight: 600; }
+nav { max-width: 760px; margin: 12px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
+nav a { color: var(--brand); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 28px 32px; margin-top: 20px; }
+h1 { font-size: 26px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+.updated { color: var(--muted); font-size: 14px; margin-top: 0; }
+a { color: var(--brand); }
+code { background: var(--bg); padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom: 40px; }
+@media (max-width: 600px) { main { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header><span class="logo">▶</span><a href="./">Ariel Play Dashboard</a></header>
+  <nav>
+    <a href="./">Inicio</a>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="condiciones.html">Condiciones del servicio</a>
+  </nav>
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 12 de octubre de 2026</p>
+
+    <p>
+      Esta política explica qué datos trata <strong>Ariel Play Dashboard</strong> (la «aplicación»), una
+      herramienta interna de Ariel Play, y cómo los protege. La aplicación solo la utiliza el titular del
+      canal de YouTube de Ariel Play para analizar su propio canal.
+    </p>
+
+    <h2>1. Servicios de la API de YouTube</h2>
+    <p>
+      La aplicación utiliza los <strong>servicios de la API de YouTube</strong> (YouTube Data API v3 y
+      YouTube Analytics API). Al autorizarla, aceptas también las
+      <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a>, y tus datos se rigen
+      además por la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.
+    </p>
+
+    <h2>2. Datos a los que accede</h2>
+    <p>Solo con la autorización expresa del titular de la cuenta, mediante OAuth 2.0 y con permisos de <strong>solo lectura</strong>:</p>
+    <ul>
+      <li><code>youtube.readonly</code>: nombre, identificador y estadísticas públicas del canal (suscriptores, vistas, número de videos) y la lista de sus videos con sus estadísticas (vistas, me gusta, comentarios, duración, fecha de publicación).</li>
+      <li><code>yt-analytics.readonly</code>: informes de YouTube Analytics del propio canal (vistas, tiempo de visualización, retención media, interacciones, suscriptores ganados y perdidos).</li>
+      <li><code>yt-analytics-monetary.readonly</code>: ingresos estimados del propio canal según YouTube Analytics.</li>
+    </ul>
+    <p>
+      La aplicación <strong>no</strong> publica, modifica ni elimina contenido; <strong>no</strong> accede a mensajes,
+      comentarios privados, datos de suscriptores individuales ni a ninguna otra información de la cuenta de Google.
+    </p>
+
+    <h2>3. Para qué se usan</h2>
+    <p>
+      Exclusivamente para mostrar al titular del canal un panel de gestión de su propio negocio audiovisual:
+      rendimiento de cada video, evolución del canal y rentabilidad. Los datos no se venden, no se usan para
+      publicidad, no se ceden ni se comparten con terceros y no se emplean para entrenar modelos de
+      inteligencia artificial.
+    </p>
+    <p>
+      El uso y la transferencia de la información recibida de las API de Google cumple la
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos del usuario de los servicios de las API de Google</a>,
+      incluidos los requisitos de uso limitado.
+    </p>
+
+    <h2>4. Dónde se guardan y cómo se protegen</h2>
+    <ul>
+      <li>Todos los datos se guardan <strong>únicamente en el equipo del titular</strong>, en una base de datos local. La aplicación no tiene servidores propios en internet.</li>
+      <li>La aplicación solo se comunica con los servidores de Google para obtener los datos autorizados.</li>
+      <li>Los tokens de acceso se almacenan <strong>cifrados</strong>; la clave de cifrado se guarda por separado y nunca se publica.</li>
+    </ul>
+
+    <h2>5. Conservación y eliminación</h2>
+    <ul>
+      <li>Los datos se conservan mientras el titular los necesite para su análisis histórico y puede borrarlos en cualquier momento.</li>
+      <li>El acceso puede revocarse en cualquier momento desde la propia aplicación («Desconectar») o desde la
+        <a href="https://myaccount.google.com/permissions">página de permisos de tu cuenta de Google</a>. Tras la revocación, la aplicación deja de obtener datos nuevos y elimina sus tokens.</li>
+      <li>Para solicitar la eliminación de cualquier dato, escribe al contacto indicado abajo.</li>
+    </ul>
+
+    <h2>6. Cookies y este sitio web</h2>
+    <p>
+      Este sitio informativo no utiliza cookies ni herramientas de analítica. Está alojado en GitHub Pages,
+      que puede registrar datos técnicos de acceso según la
+      <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.
+    </p>
+
+    <h2>7. Cambios</h2>
+    <p>Cualquier cambio en esta política se publicará en esta página con su fecha de actualización.</p>
+
+    <h2>8. Contacto</h2>
+    <p><a href="mailto:xavier.tayupanta1@gmail.com">xavier.tayupanta1@gmail.com</a></p>
+  </main>
+  <footer>
+    Esta aplicación usa los servicios de la API de YouTube. ·
+    <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> ·
+    <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>
+  </footer>
+</body>
+</html>

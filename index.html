@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ariel Play Dashboard</title>
+  <meta name="description" content="Herramienta interna de gestión y análisis de Ariel Play.">
+  <style>
+:root {
+  --text: #1e293b;
+  --muted: #64748b;
+  --brand: #2756c5;
+  --border: #e2e8f0;
+  --bg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+header { padding-top: 32px; display: flex; align-items: center; gap: 12px; }
+header .logo {
+  width: 36px; height: 36px; border-radius: 8px; background: var(--brand);
+  display: grid; place-items: center; color: #fff; font-weight: 700;
+}
+header a { color: var(--text); text-decoration: none; font-weight: 600; }
+nav { max-width: 760px; margin: 12px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
+nav a { color: var(--brand); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 28px 32px; margin-top: 20px; }
+h1 { font-size: 26px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 8px; }
+.updated { color: var(--muted); font-size: 14px; margin-top: 0; }
+a { color: var(--brand); }
+code { background: var(--bg); padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom: 40px; }
+@media (max-width: 600px) { main { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header><span class="logo">▶</span><a href="./">Ariel Play Dashboard</a></header>
+  <nav>
+    <a href="./">Inicio</a>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="condiciones.html">Condiciones del servicio</a>
+  </nav>
+  <main>
+    <h1>Ariel Play Dashboard</h1>
+    <p class="updated">Herramienta interna de gestión de Ariel Play</p>
+
+    <p>
+      <strong>Ariel Play</strong> es un proyecto audiovisual de divulgación sobre geopolítica, relaciones
+      internacionales, historia y economía internacional, que publica videos en YouTube y otras redes sociales.
+    </p>
+    <p>
+      <strong>Ariel Play Dashboard</strong> es la herramienta interna con la que el propio canal analiza su
+      negocio: registra producciones, horas de trabajo, gastos e ingresos, y consulta las estadísticas de
+      su propio canal de YouTube para medir el rendimiento y la rentabilidad de cada video.
+    </p>
+
+    <h2>Uso de los datos de YouTube</h2>
+    <p>
+      La aplicación se conecta, con la autorización expresa del titular del canal, a los servicios de la API
+      de YouTube (YouTube Data API y YouTube Analytics API) con permisos de <strong>solo lectura</strong>.
+      Nunca publica, modifica ni elimina contenido. Los datos se guardan únicamente en el equipo del titular
+      y no se comparten con terceros. Los detalles están en la <a href="privacidad.html">Política de privacidad</a>.
+    </p>
+
+    <h2>Disponibilidad</h2>
+    <p>
+      Es una herramienta de uso exclusivo de Ariel Play. No es un servicio abierto al público ni admite
+      registros de otros usuarios.
+    </p>
+
+    <h2>Contacto</h2>
+    <p><a href="mailto:xavier.tayupanta1@gmail.com">xavier.tayupanta1@gmail.com</a></p>
+  </main>
+  <footer>
+    Esta aplicación usa los servicios de la API de YouTube. ·
+    <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> ·
+    <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>
+  </footer>
+</body>
+</html>
