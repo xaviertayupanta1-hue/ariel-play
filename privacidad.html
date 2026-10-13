@@ -53,8 +53,8 @@ footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom
 
     <p>
       Esta política explica qué datos trata <strong>Ariel Play Dashboard</strong> (la «aplicación»), una
-      herramienta interna de Ariel Play, y cómo los protege. La aplicación solo la utiliza el titular del
-      canal de YouTube de Ariel Play para analizar su propio canal.
+      herramienta interna de Ariel Play, y cómo los protege. La aplicación solo la utiliza el titular de
+      las cuentas de Ariel Play para analizar sus propios canales y publicaciones.
     </p>
 
     <h2>1. Servicios de la API de YouTube</h2>
@@ -66,12 +66,24 @@ footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom
     </p>
 
     <h2>2. Datos a los que accede</h2>
-    <p>Solo con la autorización expresa del titular de la cuenta, mediante OAuth 2.0 y con permisos de <strong>solo lectura</strong>:</p>
+    <p>Solo con la autorización expresa del titular de cada cuenta y con permisos de <strong>solo lectura</strong>. YouTube utiliza OAuth 2.0:</p>
     <ul>
       <li><code>youtube.readonly</code>: nombre, identificador y estadísticas públicas del canal (suscriptores, vistas, número de videos) y la lista de sus videos con sus estadísticas (vistas, me gusta, comentarios, duración, fecha de publicación).</li>
       <li><code>yt-analytics.readonly</code>: informes de YouTube Analytics del propio canal (vistas, tiempo de visualización, retención media, interacciones, suscriptores ganados y perdidos).</li>
       <li><code>yt-analytics-monetary.readonly</code>: ingresos estimados del propio canal según YouTube Analytics.</li>
     </ul>
+    <p>
+      <strong>Instagram y Facebook:</strong> mediante tokens autorizados de las API de Meta se consultan el
+      perfil profesional o la Página, publicaciones y sus estadísticas disponibles (seguidores, vistas,
+      alcance e interacciones). La disponibilidad depende de cada cuenta y de los permisos concedidos.
+    </p>
+    <p>
+      <strong>TikTok:</strong> mediante OAuth 2.0 con Login Kit y Display API en sandbox se solicitan
+      <code>user.info.basic</code> (identificador y nombre), <code>user.info.stats</code> (seguidores, me gusta
+      recibidos y número de videos públicos) y <code>video.list</code> (lista de videos públicos, títulos,
+      enlaces, fecha, duración y contadores de vistas, me gusta, comentarios y compartidos). No se solicitan
+      permisos de publicación ni mensajes. Display API no entrega ingresos, retención ni informes diarios.
+    </p>
     <p>
       La aplicación <strong>no</strong> publica, modifica ni elimina contenido; <strong>no</strong> accede a mensajes,
       comentarios privados, datos de suscriptores individuales ni a ninguna otra información de la cuenta de Google.
@@ -79,7 +91,7 @@ footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom
 
     <h2>3. Para qué se usan</h2>
     <p>
-      Exclusivamente para mostrar al titular del canal un panel de gestión de su propio negocio audiovisual:
+      Exclusivamente para mostrar al titular de las cuentas un panel de gestión de su propio negocio audiovisual:
       rendimiento de cada video, evolución del canal y rentabilidad. Los datos no se venden, no se usan para
       publicidad, no se ceden ni se comparten con terceros y no se emplean para entrenar modelos de
       inteligencia artificial.
@@ -93,15 +105,17 @@ footer { color: var(--muted); font-size: 13px; padding-top: 16px; padding-bottom
     <h2>4. Dónde se guardan y cómo se protegen</h2>
     <ul>
       <li>Todos los datos se guardan <strong>únicamente en el equipo del titular</strong>, en una base de datos local. La aplicación no tiene servidores propios en internet.</li>
-      <li>La aplicación solo se comunica con los servidores de Google para obtener los datos autorizados.</li>
-      <li>Los tokens de acceso se almacenan <strong>cifrados</strong>; la clave de cifrado se guarda por separado y nunca se publica.</li>
+      <li>La aplicación se comunica con los servidores de Google, Meta y TikTok para obtener los datos autorizados. Cada plataforma trata esas solicitudes conforme a su propia política.</li>
+      <li>Los tokens de acceso y renovación se almacenan <strong>cifrados</strong>; la clave de cifrado y las credenciales de la app se guardan localmente y nunca se publican.</li>
     </ul>
 
     <h2>5. Conservación y eliminación</h2>
     <ul>
       <li>Los datos se conservan mientras el titular los necesite para su análisis histórico y puede borrarlos en cualquier momento.</li>
       <li>El acceso puede revocarse en cualquier momento desde la propia aplicación («Desconectar») o desde la
-        <a href="https://myaccount.google.com/permissions">página de permisos de tu cuenta de Google</a>. Tras la revocación, la aplicación deja de obtener datos nuevos y elimina sus tokens.</li>
+        <a href="https://myaccount.google.com/permissions">página de permisos de tu cuenta de Google</a>, o desde los ajustes de aplicaciones autorizadas de Meta o TikTok.
+        «Desconectar» elimina las credenciales locales y solicita la revocación a Google o TikTok; los datos históricos se conservan.
+        Si revocas externamente o el permiso caduca, la sincronización deja de obtener datos y pide reconectar; puedes eliminar las credenciales locales con «Desconectar».</li>
       <li>Para solicitar la eliminación de cualquier dato, escribe al contacto indicado abajo.</li>
     </ul>
 
